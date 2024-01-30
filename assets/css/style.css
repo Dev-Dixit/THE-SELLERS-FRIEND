@@ -5,10 +5,10 @@
 
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Lato-Medium';
     src: url('../Lato-Medium.ttf');
-  } */
+  }
 
 .main-row>img {
     width: 308.375px;
@@ -128,16 +128,31 @@ form .forget a{
     margin-bottom: 15px;
 }
 
+/* responsive essentials */
+.mob-logo {
+    display: none;
+}
+
 /* Responsive  */
 
 @media (max-width: 768px) {
     /* Your mobile-specific header styles go here */
 
+    .mob-logo {
+        width: 145px;
+        height: 37px;
+        margin-top: 7vh;
+        display: block;
+    }
+
     .side-heading {
         display: none;
     }
 
-    .d-img {
+    .d-img1 {
+        display: none;
+    }
+    .d-img2 {
         display: none;
     }
 
@@ -148,4 +163,46 @@ form .forget a{
     .second-col h6 br {
         display: none;
     }
+
+    .second-col {
+        background: linear-gradient(
+    to bottom, 
+    #0D429D 0%, 
+    #99bbf7 50%, 
+    #99bbf7 50%, 
+    #ffffff 100%
+  );
+    }
+
+    .formText {
+        /* border: 1px solid #0D429D; */
+        padding: 15px;
+        border-radius: 2%;
+        background: #fff;
+    }
 }
+
+@media (max-width: 540px) {
+
+    
+    .formText h6 {
+        font-size: 14px;
+    }
+
+    .access-page a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .d-img1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    .d-img1 {
+        display: none;
+    }
+}
+

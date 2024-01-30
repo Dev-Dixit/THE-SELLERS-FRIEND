@@ -9,10 +9,10 @@ nav .nav-text{
     color: #001F3F;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Lato-Medium';
     src: url('../Lato-Medium.ttf');
-  } */
+  }
 
 .logo {
     margin-top: 61px;
