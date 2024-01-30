@@ -217,6 +217,7 @@ input.form-control:focus {
 
     .formText {
         margin-top: 1.2rem !important;
+        padding: 0% !important;
     }
 
     .headText .back-btn-text {
