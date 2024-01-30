@@ -233,9 +233,9 @@ input.form-control:focus {
 }
 
 /* form */
-.form-group {
-    display: none; /* Hide the email input initially */
-}
+/* .form-group {
+    display: none; Hide the email input initially
+} */
 
 /* Responsive  */
 

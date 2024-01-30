@@ -62,14 +62,14 @@
                     <h6 class="lh-base text-center">Where should we send your stunning mockup preview?</h6>
                     <div class="checkbox-group">
                       <label class="custom-checkbox">
-                          <input type="radio" name="group1">
+                          <input type="radio" name="showHide" value="hide" id="hideRadio">
                           <span class="checkmark"></span>   
                       </label>
                       <div>xyz@gmail.com</div>
                     </div>
                     <div class="checkbox-group">
                       <label class="custom-checkbox">
-                        <input type="radio" name="group1">
+                        <input type="radio" name="showHide" value="show" id="showRadio">
                         <span class="checkmark"></span>
                       </label>
                       <div>Other Email Address</div>
@@ -113,19 +113,21 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-      $(document).ready(function () {
-            // Attach change event to radio buttons
-            $('input[type="radio"]').change(function () {
-                // Check if the second radio button is checked
-                if ($(this).index() === 1 && $(this).prop('checked')) {
-                    // Show the email input
-                    $('.form-group').show();
-                } else {
-                    // Hide the email input
-                    $('.form-group').hide();
-                }
-            });
+      $(document).ready(function() {
+        // Initially hide the paragraph since the 'Hide' radio button is checked
+        $('#access-email-check').hide();
+  
+        // Event listener for radio buttons
+        $('input[name="showHide"]').change(function() {
+          if ($(this).val() === 'show') {
+            // Show the paragraph if 'Show' radio button is selected
+            $('#access-email-check').show();
+          } else {
+            // Hide the paragraph if 'Hide' radio button is selected
+            $('#access-email-check').hide();
+          }
         });
+      });
     </script>
 </body>
 </html>
