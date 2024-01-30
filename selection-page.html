@@ -6,7 +6,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/selection-page.css">
    
      
 </body>
@@ -15,7 +15,7 @@
 
     <header>
       <!-- navbar -->
-      <nav class="navbar w-100 bg-white">
+      <nav class="navbar w-100 bg-white fixed-top">
         <div class="container nav-content">
           <a class="navbar-brand flex-grow-1 logo-img" href="#">
             <img src="assets/images/request-access/logo-rq.png" alt="Logo" class="d-inline-block align-text-top">
@@ -42,9 +42,10 @@
       </nav>
     </header>
 
-    <section class="container-fluid p-0">
+    <section>
         
-        <div class="d-flex justify-content-center align-items-center flex-column">
+      <div class="container-fluid p-0">
+        <div class="d-flex justify-content-center align-items-center flex-column min-vh-100">
 
             <div class="formText text-center mb-auto">    
                 <h2 class="fw-semibold">Your Visual Presence, Your Way</h2>
@@ -79,13 +80,18 @@
                 </form>
             </div>
 
-            <!-- login page footer -->
-            <div class="foot fw-semibold text-center text-spacing-5 fixed-bottom">
-                Report Error &nbsp;|&nbsp; Feedback &nbsp;|&nbsp; © Copyright 2024, All Rights Reserved &nbsp;|&nbsp; Build Version: 1.0.0
-            </div>
+           
         </div>
+      </div>
             
     </section>
+
+    <footer>
+       <!-- login page footer -->
+      <div class="foot fw-semibold text-center text-spacing-5 fixed-bottom">
+        Report Error &nbsp;|&nbsp; Feedback &nbsp;|&nbsp; © Copyright 2024, All Rights Reserved &nbsp;|&nbsp; Build Version: 1.0.0
+      </div>
+    </footer>
 
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
