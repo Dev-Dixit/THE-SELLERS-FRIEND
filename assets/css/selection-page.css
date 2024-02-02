@@ -100,6 +100,7 @@ nav .user-img {
     margin-bottom: 15px;
 }
 
+/* dropdown */
 .dropdown {
     margin-bottom: 20px;
 }
@@ -108,7 +109,7 @@ nav .user-img {
     color: #9D9D9D;
     /* font-family: 'Lato-Medium'; */
     /* font-weight: 600; */
-
+    min-width: 283px;
     font-size: 16px;
     padding: 10px;
     transition: ease-out 0.3s;
@@ -122,15 +123,6 @@ nav .user-img {
     box-shadow: 0px 2px 10px 0px rgba(150, 229, 255, 0.25) inset;
 }
 
-.drop-btn svg {
-    margin-left: 174px;
-}
-
-.bn2 svg {
-    margin-left: 153px;
-}
-
-
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
     color: #60A0D6;
     background-color: unset;
@@ -141,7 +133,7 @@ nav .user-img {
 .drop-menu {
     border: none;
     padding: 0;
-    min-width: 283px;;
+   
   }
 
 .itm {

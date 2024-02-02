@@ -175,6 +175,10 @@ input.form-control:focus {
     color: #001F3F;
     font-size: 12px;
     margin-bottom: 15px;
+    /* position: fixed;
+    bottom: 0;
+    left: 33%; */
+    
 }
 
 /* Responsive  */
