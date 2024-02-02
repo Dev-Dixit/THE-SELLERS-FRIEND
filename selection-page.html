@@ -68,7 +68,7 @@
               
                     <div class="dropdown d-flex justify-content-center">
                       <button class="drop-btn btn bn2 d-flex justify-content-between" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Specific Site <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <span id="txt-change-2">Specific Site</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 16.5001C8.7339 16.5001 4.8789 10.2601 4.1399 9.00912C3.8579 8.53412 4.0159 7.92112 4.4909 7.64012C4.9669 7.35712 5.5799 7.51712 5.8599 7.99112C7.4149 10.6161 10.4399 14.5001 11.9999 14.5001C13.5619 14.5001 16.5869 10.6161 18.1399 7.99112C18.4209 7.51712 19.0359 7.35712 19.5089 7.64012C19.9839 7.92012 20.1419 8.53312 19.8599 9.00912C19.1209 10.2601 15.2659 16.5001 11.9999 16.5001Z" fill="#9D9D9D"/>
                         </svg>
                       </button>
@@ -116,6 +116,18 @@
       $("#social").click(function () { $("#social-1").show(); $("#social-2").show(); $("#retail-1").hide(); $("#retail-2").hide(); $("#retail-3").hide(); $("#publisher-1").hide(); $("#publisher-2").hide(); $("#publisher-3").hide(); $("#txt-change").text("Social Media");});
       $("#retailer").click(function () {  $("#social-1").hide(); $("#social-2").hide(); $("#retail-1").show(); $("#retail-2").show(); $("#retail-3").show(); $("#publisher-1").hide(); $("#publisher-2").hide(); $("#publisher-3").hide(); $("#txt-change").text("Retailer");});
       $("#publisher").click(function () {  $("#social-1").hide(); $("#social-2").hide(); $("#retail-1").hide(); $("#retail-2").hide(); $("#retail-3").hide(); $("#publisher-1").show(); $("#publisher-2").show(); $("#publisher-3").show(); $("#txt-change").text("Publisher");});
+
+      // second dropdown
+      $("#social-1").click(function () { $("#txt-change-2").text("Instagram");})
+      $("#social-2").click(function () { $("#txt-change-2").text("Facebook");})
+
+      $("#retail-1").click(function () { $("#txt-change-2").text("Retailer 1");})
+      $("#retail-2").click(function () { $("#txt-change-2").text("Retailer 2");})
+      $("#retail-3").click(function () { $("#txt-change-2").text("Retailer 3");})
+
+      $("#publisher-1").click(function () { $("#txt-change-2").text("Publisher 1");})
+      $("#publisher-2").click(function () { $("#txt-change-2").text("Publisher 2");})
+      $("#publisher-3").click(function () { $("#txt-change-2").text("Publisher 3");})
       });
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
