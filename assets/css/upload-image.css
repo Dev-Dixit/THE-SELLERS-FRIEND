@@ -181,15 +181,15 @@ nav .user-img {
 
 /* upload area */
 
-.custom-border {
-    /* border-radius: 5px; */
+/* .custom-border {
+    border-radius: 5px;
     border: 1px dashed #333;
-}
+} */
 
-.upload-area {
+/* .upload-area {
     min-height: 256px;
     gap: 0.625rem;
-}
+} */
 
 p {
     margin: 10px 0px;
@@ -197,7 +197,9 @@ p {
     font-size: 12px;
 }
 
-.upload-area button {
+
+/* upload-file-1 */
+.upload-file-1 button {
     color: #333;
     font-size: 12px;
     padding: 10px 30.5px;
@@ -205,6 +207,29 @@ p {
     box-shadow: 2px 2px 0px 0px rgba(0, 31, 63, 0.10) inset;
 }
 
+.dropzone {
+    min-height: 256px !important;
+    border: 1px dashed #333 !important;
+    border-radius: 5px;
+}
+
+.dripicons-cloud-upload:before {
+    content: url(../images/upload.svg);
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    border: 1px dashed #333;
+} 
+
+.card a {
+    height: 20px;
+    width: 20px;
+    line-height: 0;
+    right: -10px;
+    top: -10px;
+}
 /* boxes */
 
 .box {

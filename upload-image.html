@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/upload-image.css">
-   
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      
 </body>
 </head>
@@ -74,24 +75,29 @@
 
             <div class="row w-100 ">
                 <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column custom-pd1">
-                    <div class="upload-area d-flex flex-column justify-content-center align-items-center  rounded custom-border">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                            <path d="M8.43753 20.625C3.40641e-05 21.5625 0.937534 11.25 8.43753 12.1875C5.62503 1.875 21.5625 1.875 20.625 9.375C30 6.5625 30 21.5625 21.5625 20.625M10.3125 16.875L15 13.125M15 13.125L19.6875 16.875M15 13.125V27.1875" stroke="#9D9D9D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        <p class="m-0">Drag Or Upload Your Image/Video Here</p>
-                        <button type="button" class="btn btn-outline-dark fw-semibold">Browse File</button>
-                    </div>
+                  <div class="upload-file-1">
+                    <form action="/" method="post" class="dropzone dz-clickable" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
+                                          
+                      <div class="dz-message needsclick">
+                          <i class="h1 text-muted dripicons-cloud-upload"></i>
+                          <p>Drag Or Upload Your Image/Video Here</p>
+                          <button type="button" class="btn btn-outline-dark fw-semibold">Browse File</button>
+                      </div>
+                    </form>
                     <p>Image should not bigger than 30MB & Video should not Bigger that 1GB</p>
-
-                    <div class="boxes-contain">
-                        <div class="box rounded">
-                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" >
-                              <div class="progress-bar bg-black" style="width: 25%;"></div>25%
-                            </div>
-                        </div>
+                    <!-- Preview -->
+                    <div class="dropzone-previews mt-3 d-flex flex-wrap gap-4" id="file-previews"></div>
+                    <!-- file preview template -->
+                    <div class="d-none" id="uploadPreviewTemplate">
+                      <div class="card mt-1 mb-0  d-flex position-relative">
+                            <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="" style="object-fit: contain;">  
+                            <a href="" class=" btn-link btn-lg position-absolute" data-dz-remove>
+                                <img src="assets/images/cross.svg" alt="" height="20px" width="20px">
+                            </a>       
+                      </div>
                     </div>
-
-                    <button type="button" class="btn btn-primary submit-btn align-self-center fw-semibold my-4" onclick="navigateTo('preview.html')">Submit</button>
+                  </div>
+                  <button type="button" class="btn btn-primary submit-btn align-self-center fw-semibold my-4" onclick="navigateTo('preview.html')">Submit</button>
 
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 custom-pd2">
@@ -146,7 +152,7 @@
                       </table>
                     </div>
                 </div>
-            </div>  
+          </div>          
         </div>
       </div> 
   </section>
@@ -161,5 +167,7 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="assets/js/form-fileuploads.init.js"></script>
 </body>
 </html>
